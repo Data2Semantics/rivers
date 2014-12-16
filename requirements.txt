@@ -1,0 +1,15 @@
+Jinja2==2.7.3
+MarkupSafe==0.23
+SPARQLWrapper==1.6.4
+backports.ssl-match-hostname==3.4.0.2
+certifi==14.05.14
+gnureadline==6.3.3
+html5lib==0.999
+ipython==2.3.1
+isodate==0.5.1
+pyparsing==2.0.3
+pyzmq==14.4.1
+rdflib==4.1.2
+six==1.8.0
+tornado==4.0.2
+wsgiref==0.1.2
