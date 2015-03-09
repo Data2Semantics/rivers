@@ -1,0 +1,10 @@
+PREFIX d2sv: <http://data.data2semantics.org/vocab/>
+
+
+SELECT DISTINCT ?journalx ?journaly (COUNT(?y) as ?cites) WHERE {
+  	?x a d2sv:Article .
+  	?x d2sv:CR ?y .
+    ?x d2sv:J9 ?journalx .
+  	?y d2sv:J9 ?journaly .
+  	FILTER(?journalx != ?journaly)
+} GROUP BY ?journalx ?journaly ORDER BY DESC(?cites)
